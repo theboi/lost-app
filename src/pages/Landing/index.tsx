@@ -6,7 +6,7 @@ import {LoginButton} from '../../components/Button/Login';
 import {PageHeader} from '../../components/Page/PageHeader';
 import {K} from '../../store/constants';
 import Svg, {Circle, G, Path, Defs} from 'react-native-svg';
-import {View} from 'react-native';
+import {View, Modal, TouchableHighlight} from 'react-native';
 
 const LandingPageC = (props: any) => {
   const themeColor = props.theme === 'dark' ? K.colors.dark : K.colors.light;
