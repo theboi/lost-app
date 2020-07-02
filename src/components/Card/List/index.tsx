@@ -18,7 +18,7 @@ export const ListCard = (props: {
   const themeFont = Platform.OS === 'ios' ? K.fonts.ios : K.fonts.android;
   const themeColor = props.theme === 'dark' ? K.colors.dark : K.colors.light;
 
-  const renderItem = ({item, index}) => {
+  const renderItem = ({item}) => {
     return (
       <ListItem
         title={`${item.title}`}
@@ -62,7 +62,7 @@ export const ListCard = (props: {
         height: props.data.length * 50,
         marginTop: props.firstInPage ? -20 : 0,
         marginBottom: 20,
-        borderRadius: 20,
+        borderRadius: 10,
         ...Platform.select({
           ios: {},
           android: {
@@ -74,7 +74,7 @@ export const ListCard = (props: {
         data={props.data}
         renderItem={props.renderItem ?? renderItem}
         scrollEnabled={false}
-        style={{overflow: 'hidden', borderRadius: 20}}
+        style={{overflow: 'hidden', borderRadius: 10}}
         ItemSeparatorComponent={() => (
           <View
             style={{
@@ -82,7 +82,7 @@ export const ListCard = (props: {
               borderBottomColor: 'transparent',
               backgroundColor: `${themeColor.contrast}33`,
               marginTop: -0.5,
-              marginLeft: 50,
+              marginLeft: 60,
             }}
           />
         )}

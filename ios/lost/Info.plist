@@ -38,7 +38,7 @@
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string>Used to track location of patients with dementia</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>AntDesign.ttf</string>

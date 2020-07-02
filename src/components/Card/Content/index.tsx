@@ -40,7 +40,7 @@ export const ContentCard = (props: {
       style={{
         marginTop: props.firstInPage ? -20 : 0,
         marginBottom: 20,
-        borderRadius: 20,
+        borderRadius: 10,
         ...Platform.select({
           ios: {},
           android: {
@@ -51,7 +51,7 @@ export const ContentCard = (props: {
       <Layout
         style={{
           overflow: 'hidden',
-          borderRadius: 20,
+          borderRadius: 10,
           height: 100,
           padding: 15,
           backgroundColor: props.backgroundColor,

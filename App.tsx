@@ -123,7 +123,7 @@ const App = (props: any) => {
                   inactiveBackgroundColor: themeColor.secondaryBG,
                   style: {borderTopColor: themeColor.primaryBG},
                 }}>
-                <Tab.Screen name="Find" component={LandingPage} />
+                <Tab.Screen name="Find" component={FindPage} />
                 <Tab.Screen name="Home" component={HomePage} />
                 <Tab.Screen name="Settings" component={SettingsPageNest} />
               </Tab.Navigator>
