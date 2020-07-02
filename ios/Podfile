@@ -37,6 +37,7 @@ target 'lost' do
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
   pod 'Firebase/Analytics'
+  pod 'GoogleSignIn', '~> 5.0.2'
 
   target 'lostTests' do
     inherit! :search_paths
@@ -45,6 +46,7 @@ target 'lost' do
 
   # React Native Maps dependencies
   rn_maps_path = '../node_modules/react-native-maps'
+  pod 'react-native-maps', path: rn_maps_path
   pod 'react-native-google-maps', :path => rn_maps_path
   pod 'GoogleMaps'
   pod 'Google-Maps-iOS-Utils'
